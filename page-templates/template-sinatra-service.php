@@ -66,7 +66,9 @@ if (have_rows('contenido')):
                           while( have_rows('imagenes') ) : the_row();
                           $image = get_sub_field('imagen');
                       ?>
-                          <div class="item-galleryx"><img alt="<?php echo esc_attr($image['alt']); ?>" class="img-fluid" src="<?php echo esc_url($image['url']); ?>" /></div>
+                          <div class="item-galleryx">
+                            <img data-toggle="modal" data-target="#exampleModal" alt="<?php echo esc_attr($image['alt']); ?>" class="img-fluid" src="<?php echo esc_url($image['url']); ?>" />
+                          </div>
                         <?php
                           endwhile;
                       endif;                      
@@ -75,6 +77,19 @@ if (have_rows('contenido')):
                 </div>
             </div>
         </div>
+      <div data-test="modal" id="exampleModal" class="modal fade top" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog-centered modal-lg modal-dialog" role="document">
+             <div class="modal-content">
+                <div data-test="modal-header" class="modal-header">
+                   <h4 class="modal-title"></h4>
+                   <button type="button" class="close" aria-label="Close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                </div>
+                <div data-test="modal-body" class="modal-body">
+                  
+                </div>
+             </div>
+          </div>
+      </div>
     </div>
   <?php
     elseif (get_row_layout() == 'tipo_acordeon'): ?>
@@ -160,7 +175,7 @@ if (have_rows('contenido')):
             if (get_sub_field('habilitado')) : ?>
         <div data-test="row" class="row">
             <button data-test="button" type="button" class="btn-default btn Ripple-parent descargar">
-                Descarga <b>SAIF</b> <span>web</span><i class="fas fa-arrow-circle-down icon"></i>
+                Descarga<b>SAIF</b><span>web</span><i class="fas fa-arrow-circle-down icon"></i>
                 <div data-test="waves" class="Ripple" style="top: 0px; left: 0px; width: 0px; height: 0px;"></div>
             </button>
         </div>         
@@ -173,18 +188,7 @@ if (have_rows('contenido')):
   endwhile;
 endif;
 ?>
-
-    <div data-test="container" class="container rowCompartir">
-        <button aria-label="email" class="react-share__ShareButton" style="background-color: transparent; border: none; padding: 0px; font: inherit; color: inherit; cursor: pointer;">
-            <button data-test="button" type="button" class="btn-default btn Ripple-parent">
-                <i data-test="fa" class="fa fa-envelope fa-lg"></i>
-                <div data-test="waves" class="Ripple" style="top: 0px; left: 0px; width: 0px; height: 0px;"></div>
-            </button>
-        </button>
-    </div>
 </div>
-
-
 
 <?php
 /* if ( have_posts() ) :

@@ -7,15 +7,32 @@
 jQuery( function ( $ ) {
   
     $('#navbarCollapse3').on('show.bs.collapse', function () {
-      console.log('open');
+      //console.log('open');
       $(document).find('html').addClass('nav-open');
       $(document).find('#page').prepend('<div id="bodyClick"></div>');
     })
     $('#navbarCollapse3').on('hide.bs.collapse', function () {
-      console.log('close');
+      //console.log('close');
       $(document).find('html').removeClass('nav-open');
       $(document).find('#bodyClick').remove();
     })
+    
+    $(document).on('hidden.bs.modal','#exampleModal', function (e) {
+      var modal = $(this);
+      modal.find('.modal-body img').remove();
+    })
+
+    $(document).on('show.bs.modal','#exampleModal', function (event) {
+      var button = $(event.relatedTarget);
+      var modal = $(this);
+      var myImg = $('<img />', {
+          id: 'id1',
+          class: 'jose',
+          src: button.attr('src'),
+          alt: 'Alt text'
+      });
+      modal.find('.modal-body').html(myImg);
+    });
 
     window.addEventListener("scroll", function(){
         if ( document.documentElement.scrollTop > 100 || document.body.scrollTop > 100 ){
