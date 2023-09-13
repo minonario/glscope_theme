@@ -583,3 +583,7 @@ a.link:hover {
 .page-consultoria ul {
   margin-left: 20px
 }
+
+.item-galleryx img {
+  cursor: pointer
+}

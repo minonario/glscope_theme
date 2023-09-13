@@ -93,14 +93,6 @@ if( have_rows('contenido') ): ?>
 <?php
 endif;  
 ?>
-    <div data-test="container" class="container rowCompartir">
-        <button aria-label="email" class="react-share__ShareButton" style="background-color: transparent; border: none; padding: 0px; font: inherit; color: inherit; cursor: pointer;">
-            <button data-test="button" type="button" class="btn-default btn Ripple-parent">
-                <i data-test="fa" class="fa fa-envelope fa-lg"></i>
-                <div data-test="waves" class="Ripple" style="top: 0px; left: 0px; width: 0px; height: 0px;"></div>
-            </button>
-        </button>
-    </div>
 </div>
 
 

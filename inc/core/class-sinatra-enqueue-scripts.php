@@ -137,7 +137,7 @@ function sinatra_enqueues() {
 	// Add additional theme styles.
 	do_action( 'sinatra_enqueue_scripts' );
         
-        wp_enqueue_script('custom-fd-js', get_template_directory_uri() . '/assets/js/custom-fd.js', array('jquery'), "4", true );
+        wp_enqueue_script('custom-fd-js', get_template_directory_uri() . '/assets/js/custom-fd.js', array('jquery'), "5", true );
         wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/assets/bootstrap/js/bootstrap.js', array('jquery'), null, true );
         wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap-v2.css', array('sinatra-styles'), '1');
         wp_enqueue_style('all-css', 'https://use.fontawesome.com/releases/v5.7.1/css/all.css', array('sinatra-styles','custom-css'), '2');
