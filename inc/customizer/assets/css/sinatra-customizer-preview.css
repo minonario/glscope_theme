@@ -23,7 +23,6 @@
   left: 50%;
   top: 50%;
 }
-
 .customize-partial-edit-shortcut-sinatra_top_bar_widgets button,
 .customize-partial-edit-shortcut-sinatra_enable_pre_footer_cta button,
 .customize-partial-edit-shortcut-sinatra_header_widgets button,
@@ -36,7 +35,6 @@
 .sinatra-social-nav .customize-partial-edit-shortcut {
   top: 0;
 }
-
 .sinatra-social-nav .customize-partial-edit-shortcut button {
   left: -20px;
 }
@@ -44,7 +42,6 @@
 .sinatra-primary-nav .customize-partial-edit-shortcut {
   top: 12px;
 }
-
 .sinatra-primary-nav .customize-partial-edit-shortcut button {
   left: -25px;
 }

@@ -2,7 +2,7 @@
 Contributors: sinatrateam
 Tags: two-columns, right-sidebar, left-sidebar, footer-widgets, blog, news, custom-background, custom-menu, post-formats, sticky-post, editor-style, threaded-comments, translation-ready, custom-colors, featured-images, full-width-template, microformats, theme-options, e-commerce
 Requires at least: 5.0
-Tested up to: 5.7
+Tested up to: 6.3
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -23,6 +23,11 @@ Sinatra is a lightweight and highly customizable multi-purpose theme that makes 
 4. Navigate to Appearance » Customize to access theme options.
 
 == Changelog ==
+
+= 1.3 =
+* Updated: WooCommerce templates.
+* Updated: WordPress 6.3 compatibility.
+* Updated: Google Fonts list.
 
 = 1.2.1 =
 * Fixed: Square icon displaying on mobile navigation.

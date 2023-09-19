@@ -28,7 +28,7 @@ final class Sinatra {
 	 * @since 1.0.0
 	 * @var string
 	 */
-	public $version = '1.2.1';
+	public $version = '1.3';
 
 	/**
 	 * Main Sinatra Instance.

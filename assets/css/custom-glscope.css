@@ -587,3 +587,48 @@ a.link:hover {
 .item-galleryx img {
   cursor: pointer
 }
+.page-descargar .descargar {
+  margin-left:inherit
+}
+
+.redlink{
+    border: 1px solid #fff;
+    padding: 0.1rem 0.2rem;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 1.3rem
+}
+.redlink .fab:before {
+    color: #414260
+}
+.redlink {
+  margin-right: 5px;
+}
+.redlink:last-child {
+  margin-right: 0px;
+}
+.page-informes .form-group .form-control {
+    width: 10rem;
+    max-width: 100%;
+    text-align: right;
+}
+
+#sinatra-footer {
+  font-size: 0.9rem
+}
+.separ{
+  margin: 0 5px
+}
+
+@media screen and (max-width: 576px){
+  .redlink {
+    font-size: 1.8rem;
+    padding: 15px 0px
+  }
+  .redlink .fab {
+    padding: 10px 15px;
+  }
+}
+html .sinatra-is-mobile #sinatra-header-inner .sinatra-nav>ul>li>a{
+  color: #fff !important;
+}

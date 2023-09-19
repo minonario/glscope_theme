@@ -10,9 +10,20 @@
  */
 get_header();
 ?>
-<div class="headerView">
-  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAQACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP0o/Yp+LHxl+Nfx9+AXgT4i/Gf4q6xpHlfED4n65c2PjLUvDmo+LNS07WdAtNN8MeIJPDZ0mz/4QLThLfS2XhHRbHRtNt31K+hQfY2gtbfHL1KniOJHKpUrOnmccNTddxqezpeynNKnFxUYNPROKTS21bb+ozqNF5Xw3yYbD0ObKp4mfsafI6ld1o03Uqyu51G0rvmk7u17qMVH+p0fbE+RdU1AKvyqGe3kIVeADJLbvK5wOXkd5GPzOzMST1KCaT12/rofLn//2Q==" alt="imgBlur">
-  <img src="<?php echo get_template_directory_uri()?>/_next/static/images/Banner_saif-f7bb8091eb5d9ce556ec87293817f6ac.jpg.webp" alt="">
+<div class="page-header">
+  <div class="page-header-image">
+    <div class="headerView">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAQACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP0o/Yp+LHxl+Nfx9+AXgT4i/Gf4q6xpHlfED4n65c2PjLUvDmo+LNS07WdAtNN8MeIJPDZ0mz/4QLThLfS2XhHRbHRtNt31K+hQfY2gtbfHL1KniOJHKpUrOnmccNTddxqezpeynNKnFxUYNPROKTS21bb+ozqNF5Xw3yYbD0ObKp4mfsafI6ld1o03Uqyu51G0rvmk7u17qMVH+p0fbE+RdU1AKvyqGe3kIVeADJLbvK5wOXkd5GPzOzMST1KCaT12/rofLn//2Q==" alt="imgBlur">
+      <?php 
+            $image = get_field('imagen_de_cabecera');
+            if( !empty( $image ) ): ?>
+          <img class="segunda" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+      <?php endif; ?>
+    </div>
+  </div>
+  <div class="page-header-mini-carousel">
+    <h3 class="h3-responsive"><?php the_field('cinta_texto'); ?></h3>
+  </div>
 </div>
 <div class="page-saif">
  <?php
@@ -174,10 +185,10 @@ if (have_rows('contenido')):
     <?php while( have_rows('descargar') ): the_row(); 
             if (get_sub_field('habilitado')) : ?>
         <div data-test="row" class="row">
-            <button data-test="button" type="button" class="btn-default btn Ripple-parent descargar">
+            <a class="btn-default btn Ripple-parent descargar" href="<?php the_sub_field('enlace')?>">
                 Descarga<b>SAIF</b><span>web</span><i class="fas fa-arrow-circle-down icon"></i>
                 <div data-test="waves" class="Ripple" style="top: 0px; left: 0px; width: 0px; height: 0px;"></div>
-            </button>
+            </a>
         </div>         
      <?php  endif;
           endwhile;

@@ -7,7 +7,6 @@
 .customize-control-sinatra-spacing .sinatra-control-wrap {
   position: relative;
 }
-
 .customize-control-sinatra-spacing .sinatra-control-wrap > ul {
   padding-top: 6px;
   display: none;
@@ -16,26 +15,22 @@
       -ms-flex-align: start;
           align-items: flex-start;
 }
-
 .customize-control-sinatra-spacing .sinatra-control-wrap > ul.active {
   -js-display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .customize-control-sinatra-spacing .sinatra-control-wrap .reset-defaults {
   position: absolute;
   top: -18px;
   right: 0;
   margin-right: 0;
 }
-
 .customize-control-sinatra-spacing .spacing-control-wrap {
   width: 20%;
   margin: 0;
 }
-
 .customize-control-sinatra-spacing .spacing-control-wrap input,
 .customize-control-sinatra-spacing .spacing-control-wrap button {
   display: block;
@@ -51,18 +46,15 @@
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
-
 .customize-control-sinatra-spacing .spacing-control-wrap input[type=number]::-webkit-inner-spin-button,
 .customize-control-sinatra-spacing .spacing-control-wrap input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 .customize-control-sinatra-spacing .spacing-control-wrap:first-child input {
   border-left-width: 1px;
   border-radius: 3px 0 0 3px;
 }
-
 .customize-control-sinatra-spacing .spacing-control-wrap .sinatra-spacing-label {
   display: block;
   color: #808890;
@@ -73,11 +65,9 @@
   font-weight: 400;
   text-align: center;
 }
-
 .customize-control-sinatra-spacing .spacing-control-wrap input:focus + .sinatra-spacing-label {
   color: #23282d;
 }
-
 .customize-control-sinatra-spacing .spacing-control-wrap .spacing-link-values {
   border: 1px solid #ddd;
   border-left-width: 0;
@@ -86,7 +76,6 @@
   border-radius: 0 3px 3px 0;
   cursor: pointer;
 }
-
 .customize-control-sinatra-spacing .spacing-control-wrap .spacing-link-values span {
   display: block;
   width: 100%;
@@ -96,20 +85,16 @@
   border-radius: 0 2px 2px 0;
   color: #808890;
 }
-
 .customize-control-sinatra-spacing .spacing-control-wrap .spacing-link-values:hover span {
   color: #23282d;
 }
-
 .customize-control-sinatra-spacing .spacing-control-wrap .spacing-link-values .sinatra-spacing-linked {
   display: none;
   color: #0073aa !important;
 }
-
 .customize-control-sinatra-spacing .spacing-control-wrap .spacing-link-values.unlinked .sinatra-spacing-unlinked {
   display: none;
 }
-
 .customize-control-sinatra-spacing .spacing-control-wrap .spacing-link-values.unlinked .sinatra-spacing-linked {
   display: block;
 }
