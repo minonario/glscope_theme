@@ -668,8 +668,12 @@ function sinatra_luminance( $hexcolor, $percent ) {
 		$hexcolor = sinatra_rgba2hex( $hexcolor );
 	}
 
-	if ( strlen( $hexcolor ) < 6 ) {
+	$hexcolor = trim( $hexcolor, '#' );
+
+	if ( strlen( $hexcolor ) < 6 && strlen( $hexcolor ) > 2 ) {
 		$hexcolor = $hexcolor[0] . $hexcolor[0] . $hexcolor[1] . $hexcolor[1] . $hexcolor[2] . $hexcolor[2];
+	} else if ( strlen( $hexcolor ) < 3 || strlen( $hexcolor ) > 6 ) {
+		return;
 	}
 
 	$hexcolor = array_map( 'hexdec', str_split( str_pad( str_replace( '#', '', $hexcolor ), 6, '0' ), 2 ) );

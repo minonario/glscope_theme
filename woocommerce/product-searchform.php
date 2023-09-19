@@ -13,9 +13,8 @@
  * Sinatra changes: added search icon inside button.
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
- * @author  WooThemes
- * @package WooCommerce/Templates
- * @version 3.3.0
+ * @package WooCommerce\Templates
+ * @version 7.0.1
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -33,3 +32,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<input type="hidden" name="post_type" value="product" />
 	</div>
 </form>
+	

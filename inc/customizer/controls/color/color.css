@@ -7,7 +7,6 @@
 .sinatra-color-wrapper .wp-picker-container {
   margin-top: 6px;
 }
-
 .sinatra-color-wrapper .sinatra-color-control {
   border-radius: 3px 0 0 0px !important;
   margin-top: 0 !important;
@@ -20,11 +19,9 @@
 body.wp-customizer .wp-picker-container {
   max-width: 247px;
 }
-
 body.wp-customizer .wp-picker-container .wp-picker-open ~ .wp-picker-holder .alpha-color-picker-container {
   display: block;
 }
-
 body.wp-customizer .wp-picker-container .iris-picker {
   margin: 0 0 0 0;
   -webkit-box-sizing: content-box !important;
@@ -33,26 +30,21 @@ body.wp-customizer .wp-picker-container .iris-picker {
   border-radius: 0;
   max-width: calc(100% - 2px);
 }
-
 body.wp-customizer .wp-picker-container .iris-picker .iris-square {
   margin-right: 0;
 }
-
 body.wp-customizer .wp-picker-container .iris-picker .iris-strip {
   float: right;
 }
-
 body.wp-customizer .wp-picker-container .iris-picker .iris-strip .ui-slider-handle {
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 2px;
   opacity: 1;
 }
-
 body.wp-customizer .wp-picker-container .iris-picker .iris-strip .ui-slider-handle:before {
   border-radius: 2px;
 }
-
 body.wp-customizer .wp-picker-container .wp-color-result.button {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -64,13 +56,11 @@ body.wp-customizer .wp-picker-container .wp-color-result.button {
   max-width: 160px;
   position: relative;
 }
-
 body.wp-customizer .wp-picker-container .wp-color-result.button:focus, body.wp-customizer .wp-picker-container .wp-color-result.button:hover {
   border-color: #bcbcbc !important;
 }
-
 body.wp-customizer .wp-picker-container .wp-color-result.button:before {
-  content: '';
+  content: "";
   background-image: url("../../assets/images/transparency.svg");
   position: absolute;
   left: 0;
@@ -81,7 +71,6 @@ body.wp-customizer .wp-picker-container .wp-color-result.button:before {
   background-repeat: repeat;
   background-size: 18px;
 }
-
 body.wp-customizer .wp-picker-container .wp-color-result.button .wp-color-result-text {
   background-color: #eee;
   height: 32px;
@@ -98,7 +87,6 @@ body.wp-customizer .wp-picker-container .wp-color-result.button .wp-color-result
   font-size: 13px;
   color: #555d66;
 }
-
 body.wp-customizer .alpha-color-picker-container {
   display: none;
   width: 247px;
@@ -114,13 +102,11 @@ body.wp-customizer .alpha-color-picker-container {
   position: relative;
   z-index: 2;
 }
-
 body.wp-customizer .alpha-color-picker-container .ui-widget-content,
 body.wp-customizer .alpha-color-picker-container .ui-widget-header {
   background: transparent;
   border: none;
 }
-
 body.wp-customizer .alpha-color-picker-container .ui-slider {
   position: relative;
   z-index: 1;
@@ -128,9 +114,8 @@ body.wp-customizer .alpha-color-picker-container .ui-slider {
   text-align: center;
   margin: 0 auto;
   width: 88%;
-  width: calc( 100% - 28px);
+  width: calc(100% - 28px);
 }
-
 body.wp-customizer .alpha-color-picker-container .ui-slider-handle,
 body.wp-customizer .alpha-color-picker-container .ui-widget-content .ui-state-default {
   color: #000;
@@ -151,13 +136,11 @@ body.wp-customizer .alpha-color-picker-container .ui-widget-content .ui-state-de
   line-height: 27px;
   margin-left: -14px;
 }
-
 body.wp-customizer .alpha-color-picker-container .ui-slider-handle:focus,
 body.wp-customizer .alpha-color-picker-container .ui-widget-content .ui-state-default:focus {
   -webkit-box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
           box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
 }
-
 body.wp-customizer .alpha-color-picker-container .ui-slider-handle.show-opacity {
   font-size: 10px;
   font-weight: 500;
@@ -166,7 +149,6 @@ body.wp-customizer .alpha-color-picker-container .ui-slider-handle.show-opacity 
       -ms-user-select: none;
           user-select: none;
 }
-
 body.wp-customizer .alpha-color-picker-container .click-zone {
   display: block;
   position: absolute;
@@ -174,12 +156,10 @@ body.wp-customizer .alpha-color-picker-container .click-zone {
   width: 14px;
   height: 24px;
 }
-
 body.wp-customizer .alpha-color-picker-container .max-click-zone {
   right: 10px;
   left: auto;
 }
-
 body.wp-customizer .alpha-color-picker-container .transparency {
   height: 24px;
   width: 100%;
@@ -191,25 +171,20 @@ body.wp-customizer .alpha-color-picker-container .transparency {
   padding: 0;
   margin-top: -24px;
 }
-
 body.wp-customizer .alpha-color-picker-wrap .ui-state-focus {
   background: transparent;
   border: none;
 }
-
 body.wp-customizer .alpha-color-picker-wrap a.iris-square-value:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-
 body.wp-customizer .wp-picker-holder {
   max-width: 247px;
 }
-
 body.wp-customizer .wp-picker-input-wrap {
   overflow: hidden;
 }
-
 body.wp-customizer .wp-picker-open + .wp-picker-input-wrap {
   width: 100%;
   margin-top: 12px;
@@ -220,14 +195,11 @@ body.wp-customizer .wp-picker-open + .wp-picker-input-wrap {
   max-width: 247px;
   border-radius: 0;
 }
-
-body.wp-customizer .wp-picker-open + .wp-picker-input-wrap > label,
-body.wp-customizer .wp-picker-open + .wp-picker-input-wrap > span {
+body.wp-customizer .wp-picker-open + .wp-picker-input-wrap > label, body.wp-customizer .wp-picker-open + .wp-picker-input-wrap > span {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
-
 body.wp-customizer .wp-picker-open + .wp-picker-input-wrap label {
   width: auto;
   -ms-flex-negative: 0;
@@ -235,7 +207,6 @@ body.wp-customizer .wp-picker-open + .wp-picker-input-wrap label {
   margin: 0;
   border-radius: 0;
 }
-
 body.wp-customizer .wp-picker-open + .wp-picker-input-wrap label input {
   padding: 0 12px;
   width: 100% !important;
@@ -252,8 +223,7 @@ body.wp-customizer .wp-picker-open + .wp-picker-input-wrap label input {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
-
-body.wp-customizer .wp-picker-open + .wp-picker-input-wrap input[type="button"] {
+body.wp-customizer .wp-picker-open + .wp-picker-input-wrap input[type=button] {
   height: auto !important;
   padding: 8px 12px;
   border-radius: 0 3px 0 0;
@@ -265,7 +235,6 @@ body.wp-customizer .wp-picker-open + .wp-picker-input-wrap input[type="button"] 
   margin-left: 0;
   font-size: 13px;
 }
-
 body.wp-customizer .wp-picker-clear {
   width: 28%;
   -webkit-box-shadow: none !important;
@@ -276,7 +245,7 @@ body.wp-customizer .wp-picker-clear {
 /* Responsive */
 
 @media only screen and (max-width: 640px) {
-  .wp-picker-input-wrap input[type="text"].wp-color-picker.sinatra-color-control {
+  .wp-picker-input-wrap input[type=text].wp-color-picker.sinatra-color-control {
     height: 33px;
   }
 }

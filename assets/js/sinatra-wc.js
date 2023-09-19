@@ -4,27 +4,26 @@
 // Sinatra WooCommerce compatibility script.
 //--------------------------------------------------------------------//
 ;
-
 (function ($) {
   "use strict";
+
   /**
    * Cart dropdown timer.
    * @type {Boolean}
    */
-
   var cart_dropdown_timer = false;
+
   /**
    * Common element caching.
    */
-
   var $body = $('body');
   var $wrapper = $('#page');
+
   /**
    * Holds most important methods that bootstrap the whole theme.
    * 
    * @type {Object}
    */
-
   var SinatraWC = {
     /**
      * Start the engine.
@@ -33,12 +32,15 @@
      */
     init: function init() {
       // Document ready.
-      $(document).ready(SinatraWC.ready); // Ajax complete event.
+      $(document).ready(SinatraWC.ready);
 
-      $(document).ajaxComplete(SinatraWC.ajaxComplete); // On WooCommerce ajax added to cart event.
+      // Ajax complete event.
+      $(document).ajaxComplete(SinatraWC.ajaxComplete);
 
-      $body.on('added_to_cart', SinatraWC.addedToCart); // Bind UI actions.
+      // On WooCommerce ajax added to cart event.
+      $body.on('added_to_cart', SinatraWC.addedToCart);
 
+      // Bind UI actions.
       SinatraWC.bindUIActions();
     },
     //--------------------------------------------------------------------//
@@ -54,7 +56,6 @@
       SinatraWC.customDropdown();
       SinatraWC.quantButtons();
     },
-
     /**
      * On ajax request complete.
      *
@@ -63,7 +64,6 @@
     ajaxComplete: function ajaxComplete() {
       SinatraWC.quantButtons();
     },
-
     /**
      * On WooCommerce added to cart event.
      *
@@ -72,7 +72,6 @@
     addedToCart: function addedToCart() {
       SinatraWC.showCartDropdown();
     },
-
     /**
      * Bind UI actions.
      *
@@ -91,10 +90,10 @@
      * @since 1.0.0
     */
     quantButtons: function quantButtons() {
-      var $new_quantity, $quantity, $input, $this; // Append plus and minus buttons to cart quantity.
+      var $new_quantity, $quantity, $input, $this;
 
+      // Append plus and minus buttons to cart quantity.
       var $quant_input = $('div.quantity:not(.appended), td.quantity:not(.appended)').find('.qty');
-
       if ($quant_input.length && 'date' !== $quant_input.prop('type') && 'hidden' !== $quant_input.prop('type')) {
         // Add plus and minus icons
         $quant_input.parent().addClass('appended');
@@ -106,7 +105,6 @@
           $input = $this.parent().find('input');
           $quantity = $input.val();
           $new_quantity = 0;
-
           if ($this.hasClass('si-woo-plus')) {
             $new_quantity = parseInt($quantity) + 1;
           } else {
@@ -114,14 +112,13 @@
               $new_quantity = parseInt($quantity) - 1;
             }
           }
+          $input.val($new_quantity);
 
-          $input.val($new_quantity); // Trigger change.
-
+          // Trigger change.
           $quant_input.trigger('change');
         });
       }
     },
-
     /**
      * Shows cart dropdown widget for 5 seconds aftern an item has been added to the cart.
      *
@@ -132,22 +129,18 @@
       if (!$('.si-header-widget__cart').length) {
         return;
       }
-
       $('.si-header-widget__cart').addClass('dropdown-visible');
       setTimeout(function () {
         $('#sinatra-header-inner').find('.si-cart').find('.si-cart-count').addClass('animate-pop');
       }, 100);
-
       if (cart_dropdown_timer) {
         clearTimeout(cart_dropdown_timer);
         cart_dropdown_timer = false;
       }
-
       cart_dropdown_timer = setTimeout(function () {
         $('.si-header-widget__cart').removeClass('dropdown-visible').find('.dropdown-item').removeAttr('style');
       }, 5000);
     },
-
     /**
      * Adds custom dropdown field for shop orderby.
      *
@@ -157,7 +150,6 @@
       if (!$('form.woocommerce-ordering').length) {
         return;
       }
-
       var $select = $('form.woocommerce-ordering .orderby');
       var $form_wrap = $('form.woocommerce-ordering');
       var $sel_option = $('form.woocommerce-ordering .orderby option:selected').text();
@@ -171,19 +163,18 @@
         $(this).width($appended.width());
       });
     },
-
     /**
      * Removes an item from cart via ajax.
      *
      * @since 1.0.0
     */
     removeCartItem: function removeCartItem() {
-      var $this; // Exit if there is no cart item remove button.
+      var $this;
 
+      // Exit if there is no cart item remove button.
       if (!$('.si-remove-cart-item').length) {
         return;
       }
-
       $wrapper.on('click', '.si-remove-cart-item', function (e) {
         e.preventDefault();
         $this = $(this);

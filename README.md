@@ -1,1 +1,0 @@
-# glscope_theme

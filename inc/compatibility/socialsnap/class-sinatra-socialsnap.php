@@ -94,7 +94,7 @@ if ( ! class_exists( 'Sinatra_SocialSnap' ) ) :
 		public function update_recommended_plugins( $plugins ) {
 
 			// Check if pro version is installed.
-			if ( socialsnap()->pro ) {
+			if ( socialsnap()->pro && isset( $plugins['socialsnap'] ) ) {
 				unset( $plugins['socialsnap'] );
 			}
 

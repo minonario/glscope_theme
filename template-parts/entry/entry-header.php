@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		echo sprintf(
 			wp_kses_post( $sinatra_title_string ),
 			wp_kses_post( get_the_title() ),
-			wp_kses_post( $sinatra_title_icon ),
+			$sinatra_title_icon ? wp_kses_post( $sinatra_title_icon ) : '',
 			esc_url( sinatra_entry_get_permalink() ),
 			the_title_attribute( array( 'echo' => false ) )
 		);

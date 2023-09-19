@@ -12,9 +12,8 @@
 .sinatra-sortable-item.invisible {
   background-color: rgba(255, 255, 255, 0);
 }
-
 .sinatra-sortable-item.invisible .dashicons-visibility:before {
-  content: '\f530';
+  content: "\f530";
 }
 
 .sinatra-sortable-item {
@@ -33,7 +32,6 @@
   margin: 0 0 6px;
   border: 1px solid #dedede;
 }
-
 .sinatra-sortable-item .dashicons {
   -js-display: inline-flex;
   display: -webkit-inline-box;
@@ -50,21 +48,17 @@
   border-right: 1px solid #dedede;
   font-size: 16px;
 }
-
 .sinatra-sortable-item .dashicons-menu {
   cursor: -webkit-grab;
   cursor: grab;
 }
-
 .sinatra-sortable-item .dashicons-menu:active {
   cursor: -webkit-grabbing;
   cursor: grabbing;
 }
-
 .sinatra-sortable-item .dashicons-visibility {
   cursor: pointer;
 }
-
 .sinatra-sortable-item span {
   margin-left: 12px;
   font-weight: 400;

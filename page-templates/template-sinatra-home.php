@@ -14,10 +14,14 @@ get_header();
   <div class="page-header-image">
     <div class="headerView">
       <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAQACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APo/9oT9oT4xS6hZ6PovjW68IvZ6tqkMer+GNL0G11aTSrGMX+n6DO+oaVqVjLpFjdeINWaGI2AupIbiKzuru4sbHT7a1+XfPmeAw88RUnGsvddekqcZzhRq1FThUhKE6E4RU5e66Vne7u1G3vYL2OVY/E+ww1CrCsknSxCqVIwbpq86U41KdanUbjF88avNGzUHFTmpfmQvx3+OzAMPjH44jDAMI45dCSNARkJGv9h/Ki/dVeygDtX6/hc2pzw2HnUyXh+pUlQpSnUnlNDmnOVOLlOVmlzSbcnZJXbsktD89rZJh4VasaeKzCnCNScYU44yfLCCk1GEbpvlirJXbdlq29T/AP/Z" alt="imgBlur">
-      <img src="<?php echo get_template_directory_uri() ?>/static/Banner_home-783da5fa2a76423fbaa8d22d07e02f17.jpg.webp" alt="">
+    <?php 
+          $image = get_field('imagen_de_cabecera');
+          if( !empty( $image ) ): ?>
+      <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+    <?php endif; ?>
     </div>
     <div class="page-header-mini-carousel">
-      <h3 class="h3-responsive"> Consultoría Integral e Información </h3>
+      <h3 class="h3-responsive"><?php the_field('cinta_texto'); ?></h3>
     </div>
   </div>
 </div>

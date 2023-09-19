@@ -21,17 +21,14 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 .customize-control-sinatra-radio-image input {
   display: none;
 }
-
 .customize-control-sinatra-radio-image input:checked + label > img {
   border-color: #0085ba;
 }
-
 .customize-control-sinatra-radio-image input:checked + label:after {
-  content: '\f147';
+  content: "\f147";
   -webkit-font-smoothing: antialiased;
   font: normal 16px/1 "dashicons";
   vertical-align: top;
@@ -53,7 +50,6 @@
           justify-content: center;
   color: #FFF;
 }
-
 .customize-control-sinatra-radio-image label {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -67,14 +63,12 @@
   padding: 12px 6px 0 6px;
   margin: 0;
 }
-
 .customize-control-sinatra-radio-image label img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: solid 2px #fff;
   display: block;
 }
-
 .customize-control-sinatra-radio-image label:hover .small-tooltip {
   display: block;
 }

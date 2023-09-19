@@ -85,10 +85,6 @@ if ( ! class_exists( 'Sinatra_Customizer_Main_Footer' ) ) :
 							'image' => SINATRA_THEME_URI . '/inc/customizer/assets/images/footer-layout-4.svg',
 							'title' => esc_html__( '1/3 + 2/3', 'sinatra' ),
 						),
-						'layout-5' => array(
-							'image' => SINATRA_THEME_URI . '/inc/customizer/assets/images/footer-layout-5.svg',
-							'title' => esc_html__( '1/3 + 2/3 + 1/3', 'sinatra' ),
-						),
 					),
 					'required'    => array(
 						array(

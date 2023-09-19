@@ -1,3 +1,8 @@
+= 1.3 =
+* Updated: WooCommerce templates.
+* Updated: WordPress 6.3 compatibility.
+* Updated: Google Fonts list.
+
 = 1.2.1 =
 * Fixed: Square icon displaying on mobile navigation.
 * Fixed: Table alignment not working.
