@@ -64,7 +64,7 @@ if (have_rows('contenido')):
       <div data-test="container" class="container space">
         <?php echo do_shortcode(get_sub_field('shortcode'))?>
         <div data-test="row" class="row row-button">
-          <a data-test="button" <?php echo (get_sub_field('abrir_en_pestana') ? 'target="_blank"' : '')?> role="button" class="btn-default btn Ripple-parent btn-round btn-color-primary" href="<?php echo get_sub_field('enlace') ?>"> 
+          <a data-test="button" <?php echo (get_sub_field('abrir_en_pestana') ? 'target="_blank" rel="noreferrer"' : '')?> role="button" class="btn-default btn Ripple-parent btn-round btn-color-primary" href="<?php echo get_sub_field('enlace') ?>"> 
             Ver más
             <div data-test="waves" class="Ripple "></div>
           </a>

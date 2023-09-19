@@ -66,7 +66,7 @@ if( have_rows('contenido') ): ?>
                 <?php echo do_shortcode(get_sub_field('shortcode'))?>
                 <div data-test="col" class="col-sm-12">
                     <div data-test="row" class="row row-button">
-                      <a class="btn-default btn Ripple-parent btn-round btn-color-primary" href="https://finanzasdigital.com" target="_blank">
+                      <a class="btn-default btn Ripple-parent btn-round btn-color-primary" href="https://finanzasdigital.com" target="_blank" rel="noreferrer">
                             Ver más
                       </a>
                     </div>
