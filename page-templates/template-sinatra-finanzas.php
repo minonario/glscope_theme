@@ -39,11 +39,12 @@ if( have_rows('contenido') ): ?>
         <div data-test="container" class="container-fluid banner">
             <div data-test="container" class="container">
                 <div data-test="row" class="row">
-                    <div data-test="col" class="col-sm-6">
+                    <div data-test="col" class="<?php echo(get_sub_field('video_o_imagen') ? 'col-sm-6' : 'col-sm-12 col-md-6')?>">
                         <div class="corner">
                             <?php the_sub_field('texto'); ?>
                         </div>
                     </div>
+                        <?php if (get_sub_field('video_o_imagen')) :?>
                     <div data-test="col" class="col-sm-6 col-img">
                         <a href="https://www.finanzasdigital.com" target="_blank" rel="noopener noreferrer">
                         <?php 
@@ -54,6 +55,17 @@ if( have_rows('contenido') ): ?>
                       <?php endif; ?>
                         </a>
                     </div>
+                        <?php else: ?>
+                    <div data-test="col" class="col-sm-12 col-md-6 col-img">
+                    <div class="video-banner">
+                            <div class="react-player" style="width: 100%; height: 100%;">
+                                <div style="width: 100%; height: 100%; overflow: hidden;" data-vimeo-initialized="true">
+                                     <?php the_sub_field('video', false) ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                      <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -92,8 +104,10 @@ if( have_rows('contenido') ): ?>
         elseif( get_row_layout() == 'bloque_fila' ): ?>
         <div data-test="container" class="container">
             <div data-test="row" class="row">
+              <div class="col-lg-12">
                 <h1 class="upper"><?php the_sub_field('titulo') ?></h1>
                 <?php the_sub_field('texto') ?>
+              </div>
             </div>
         </div>
         <?php

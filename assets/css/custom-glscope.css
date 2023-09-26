@@ -632,3 +632,50 @@ a.link:hover {
 html .sinatra-is-mobile #sinatra-header-inner .sinatra-nav>ul>li>a{
   color: #fff !important;
 }
+.page-consultoria h3 {
+    padding-left: 0.5rem;
+    font-size: 2em;
+    width: 100%;
+    color: #475ca7;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.page-consultoria h3:after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin-left: 1rem;
+    margin-right: 6rem;
+    background: #475ca7;
+    width: 100%;
+}
+.page-consultoria h4 {
+    color: #475ca7;
+}
+.page-consultoria .space {
+    margin-top: 2rem;
+}
+.page-consultoria .banner .col-img {
+    position: relative;
+    z-index: 5;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.page-consultoria .banner .video-banner {
+    width: 100%;
+    padding-top: 56.25%;
+    height: min-content;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.page-consultoria .banner .video-banner .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border-radius: 12px;
+}

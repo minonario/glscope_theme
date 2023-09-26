@@ -141,7 +141,7 @@ function sinatra_enqueues() {
         wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/assets/bootstrap/js/bootstrap.js', array('jquery'), null, true );
         wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap-v2.css', array('sinatra-styles'), '1');
         wp_enqueue_style('all-css', 'https://use.fontawesome.com/releases/v6.4.2/css/all.css', array('sinatra-styles','custom-css'), '2');
-        wp_enqueue_style('custom-css', get_template_directory_uri() . '/assets/css/custom-glscope.css', array('sinatra-styles','sinatra-dynamic-styles','bootstrap-css'), '0.1');
+        wp_enqueue_style('custom-css', get_template_directory_uri() . '/assets/css/custom-glscope.css', array('sinatra-styles','sinatra-dynamic-styles','bootstrap-css'), '0.6');
         
         wp_enqueue_script('slick-js', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), null, true );
         wp_enqueue_style('slick-css', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array('sinatra-styles'), '1');
