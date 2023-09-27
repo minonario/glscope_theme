@@ -691,3 +691,9 @@ html .sinatra-is-mobile #sinatra-header-inner .sinatra-nav>ul>li>a{
 .page-consultoria .corner h1 {
     font-size: 3.8em;
 }
+
+@media screen and (max-width: 576px){
+  .page-consultoria .corner h1 {
+      font-size: 2em;
+  }
+}
