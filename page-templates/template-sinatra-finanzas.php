@@ -102,32 +102,34 @@ if( have_rows('contenido') ): ?>
         </div>
         <?php
         elseif( get_row_layout() == 'bloque_fila' ): ?>
-        <div data-test="container" class="container">
-          <?php if(get_sub_field('dos_columnas')) :?>
-                <?php if (get_sub_field('titulo')): ?>
-                <h1 class="upper"><?php the_sub_field('titulo') ?></h1>
-                <?php endif; ?>
-          <?php endif; ?>
-          <?php if(!get_sub_field('dos_columnas')) :?>
-            <div data-test="row" class="row">
-              <div class="col-lg-12">
-		<?php if (get_sub_field('titulo')): ?>
-                <h1 class="upper"><?php the_sub_field('titulo') ?></h1>
-		<?php endif; ?>
-                <?php the_sub_field('texto') ?>
+        <div data-test="container" class="container-fluid">
+          <div data-test="container" class="container">
+            <?php if(get_sub_field('dos_columnas')) :?>
+                  <?php if (get_sub_field('titulo')): ?>
+                  <h1 class="upper"><?php the_sub_field('titulo') ?></h1>
+                  <?php endif; ?>
+            <?php endif; ?>
+            <?php if(!get_sub_field('dos_columnas')) :?>
+              <div data-test="row" class="row">
+                <div class="col-lg-12">
+                  <?php if (get_sub_field('titulo')): ?>
+                  <h1 class="upper"><?php the_sub_field('titulo') ?></h1>
+                  <?php endif; ?>
+                  <?php the_sub_field('texto') ?>
+                </div>
               </div>
-            </div>
-          <?php endif; ?>
-          <?php if(get_sub_field('dos_columnas')) :?>
-            <div data-test="row" class="row">
-              <div class="col-lg-6">
-                <?php the_sub_field('texto') ?>
+            <?php endif; ?>
+            <?php if(get_sub_field('dos_columnas')) :?>
+              <div data-test="row" class="row">
+                <div class="col-lg-6">
+                  <?php the_sub_field('texto') ?>
+                </div>
+                <div class="col-lg-6">
+                  <?php the_sub_field('texto_dos') ?>
+                </div>
               </div>
-              <div class="col-lg-6">
-                <?php the_sub_field('texto_dos') ?>
-              </div>
-            </div>
-          <?php endif; ?>
+            <?php endif; ?>
+          </div>
         </div>
         <?php
         endif;
