@@ -130,7 +130,14 @@ final class Sinatra {
                 
                 add_filter('upload_mimes', array($this, 'ds8_add_custom_mime_types'),10, 1);
                 
-                //JLMA DEPRECATED require_once SINATRA_THEME_PATH . '/inc/wp-bootstrap-navwalker.php';
+                add_filter('acf/the_field/allow_unsafe_html', function ($allowed, $selector) {
+                  if ($selector === "video") {
+                    return true;
+                  }
+                  return $allowed;
+                }, 10, 2);
+
+    //JLMA DEPRECATED require_once SINATRA_THEME_PATH . '/inc/wp-bootstrap-navwalker.php';
 	}
         
         public function ds8_add_custom_mime_types($mimes) {

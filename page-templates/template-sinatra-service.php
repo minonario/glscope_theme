@@ -180,6 +180,23 @@ if (have_rows('contenido')):
             endif;
     ?>
     <?php endwhile; ?>
+    <?php endif; ?>
+    </div>
+  <?php
+        elseif( get_row_layout() == 'bloque_dos_columnas' ): ?>
+        <div data-test="container" class="container cc">
+            <h3 class="upper"><?php the_sub_field('titulo') ?></h3>
+            <div data-test="container" class="container">
+                <div data-test="row" class="row space">
+                    <div data-test="col" class="col-sm-12 col-md-6 info">
+                        <?php the_sub_field('texto') ?>
+                    </div>
+                    <div data-test="col" class="col-sm-12 col-md-5">
+                        <?php echo do_shortcode(get_sub_field('shortcode')) ?>
+                    </div>
+                </div>
+            </div>
+        </div>
   <?php endif; ?>
   <?php if( have_rows('descargar') ): ?>
     <?php while( have_rows('descargar') ): the_row(); 
@@ -193,9 +210,7 @@ if (have_rows('contenido')):
      <?php  endif;
           endwhile;
         endif; ?>    
-    </div>
   <?php
-    endif;
   endwhile;
 endif;
 ?>
